@@ -4,7 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.c \
-    app.c
+    input_data.c \
+    print_error.c
 
 HEADERS += \
-    app.h
+    input_data.h \
+    print_error.h \
+    all_include.h
