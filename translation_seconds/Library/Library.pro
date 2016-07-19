@@ -12,9 +12,12 @@ TARGET = Library
 TEMPLATE = lib
 CONFIG += staticlib
 
-SOURCES += library.c
+SOURCES += \
+    conver_seconds.c
 
-HEADERS += library.h
+HEADERS += \
+    convert_seconds.h \
+    struct_set.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
