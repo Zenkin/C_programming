@@ -1,6 +1,6 @@
 #include "input_data.h"
 
-void input_data()
+long int input_data()
 {
     long int seconds, max_seconds = 31540000;
     bool error = true;
@@ -19,4 +19,5 @@ void input_data()
             error = false;
         }
     }
+    return seconds;
 }

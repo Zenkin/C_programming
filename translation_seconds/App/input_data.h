@@ -5,6 +5,6 @@
 #include <stdbool.h>
 #include <print_error.h>
 
-void input_data();
+long int input_data();
 
 #endif // INPUT_DATA_H

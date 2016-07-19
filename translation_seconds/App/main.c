@@ -5,6 +5,6 @@
 
 int main()
 {
-    input_data();
+    long int seconds = input_data();
     return 0;
 }
