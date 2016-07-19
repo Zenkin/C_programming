@@ -7,4 +7,5 @@ int main()
 {
     long int seconds = input_data();
     return 0;
+    //seconds_to_days.hours.minutes.seconds(seconds);
 }
