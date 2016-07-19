@@ -3,7 +3,10 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#include <print_error.h>
+#include "print_error.h"
+#include "struct_count.h"
+#include "convert_seconds.h"
+#include "output_data.h"
 
 long int input_data();
 

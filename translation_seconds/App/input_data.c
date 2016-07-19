@@ -6,6 +6,7 @@ long int input_data()
     bool error = true;
 
     puts("Enter seconds(not more 31'540'000):");
+    printf("Input seconds: ");
     while (error)
     {
         scanf("%ld", &seconds);
@@ -18,6 +19,15 @@ long int input_data()
         {
             error = false;
         }
+    }
+
+    if (seconds == 1)
+    {
+        printf("%ld second is ", seconds);
+    }
+    else
+    {
+        printf("%ld seconds is ", seconds);
     }
     return seconds;
 }

@@ -5,7 +5,10 @@
 extern "C" {
 #endif
 
-struct set convert_seconds(long int seconds);
+#include "struct_count.h"
+#include "pick_out_dhms.h"
+
+struct Count convert_seconds(long int seconds); // convert seconds in days.hours.minutes.seconds
 
 #ifdef __cplusplus
 }

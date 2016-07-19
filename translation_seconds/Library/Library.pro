@@ -13,11 +13,14 @@ TEMPLATE = lib
 CONFIG += staticlib
 
 SOURCES += \
-    conver_seconds.c
+    conver_seconds.c \
+    pick_out_dhms.c
 
 HEADERS += \
     convert_seconds.h \
-    struct_set.h
+    struct_count.h \
+    pick_out_dhms.h \
+    struct_result.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
