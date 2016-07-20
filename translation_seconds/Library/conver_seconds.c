@@ -3,7 +3,7 @@
 
 #define min 60 // seconds in minute
 #define hour 3600 // seconds in hour
-#define day 216000 // seconds in day
+#define day 86400 // seconds in day
 
 struct Count convert_seconds(long int seconds)
 {

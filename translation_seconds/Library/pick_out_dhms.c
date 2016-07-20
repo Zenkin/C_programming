@@ -1,8 +1,9 @@
 #include "pick_out_dhms.h"
 
+// return count days in all seconds which served in the function
 struct Result pick_out_days(long int seconds)
     {
-        long int day = 216000;
+        long int day = 86400;
         struct Result result1;
 
         int int_part_day = seconds / day;
@@ -19,6 +20,7 @@ struct Result pick_out_days(long int seconds)
         return result1;
     }
 
+// return count hours in all seconds which served in the function
 struct Result pick_out_hours(long int seconds)
     {
         long int hour = 3600;
@@ -38,6 +40,7 @@ struct Result pick_out_hours(long int seconds)
         return result1;
     }
 
+// return count minutes in all seconds which served in the function
 struct Result pick_out_minutes(long int seconds)
     {
         long int min = 60;

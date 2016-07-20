@@ -39,10 +39,10 @@ void output_data(struct Count output)
         }
         else
         {
-            printf("minute");
+            printf("minute ");
         }
     }
-    if (data.seconds >= 0)
+    if (data.seconds > 0)
     {
         printf("%ld ", data.seconds);
         if ((data.seconds > 1)||(data.seconds < 1))

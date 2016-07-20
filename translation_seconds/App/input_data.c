@@ -20,14 +20,5 @@ long int input_data()
             error = false;
         }
     }
-
-    if (seconds == 1)
-    {
-        printf("%ld second is ", seconds);
-    }
-    else
-    {
-        printf("%ld seconds is ", seconds);
-    }
     return seconds;
 }

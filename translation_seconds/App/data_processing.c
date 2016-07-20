@@ -4,8 +4,24 @@
 void data_processing()
 {
     struct Count data;
-    long int seconds = input_data();
 
+    long int seconds = input_data();
     data = convert_seconds(seconds); // convert seconds to days.hours.minutes.seconds
-    output_data(data);
+    if (seconds == 1)
+    {
+        printf("%ld second is ", seconds);
+    }
+    else
+    {
+        printf("%ld seconds is ", seconds);
+    }
+    if ((data.days == 0) && (data.hours == 0) && (data.minutes == 0))
+    {
+        puts("0 seconds");
+        return;
+    }
+    else
+    {
+        output_data(data);
+    }
 }
