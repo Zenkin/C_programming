@@ -1,3 +1,5 @@
+//ОПЕЧАТКА В НАЗВАНИИ ФАЙЛА
+
 #include "convert_seconds.h"
 #include "struct_count.h"
 
