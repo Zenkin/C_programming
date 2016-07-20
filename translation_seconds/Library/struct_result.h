@@ -5,6 +5,7 @@
 extern "C" {
 #endif
 
+//?????
 struct Result // the result of which returns pick_out_* functions( * - d/h/m/s)
 {
     long int count; // the count of d/h/m/s in all seconds( which served in function)
