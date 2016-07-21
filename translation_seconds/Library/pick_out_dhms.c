@@ -53,7 +53,6 @@ struct Result pick_out_days(long int seconds)
 
 
 
-
 // return count hours in all seconds which served in the function
 struct Result pick_out_hours(long int seconds)
     {
