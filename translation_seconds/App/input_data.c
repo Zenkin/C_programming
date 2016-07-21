@@ -11,7 +11,7 @@ long int input_data()
     printf("Input seconds: ");
     while (invalid_values)
     {
-        scanf("%ld", &seconds);
+        scanf("%ld", &input_seconds);
         if ((input_seconds > max_input_seconds) || (input_seconds < 0))
         {
             print_error();

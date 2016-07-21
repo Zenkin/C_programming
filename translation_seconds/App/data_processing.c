@@ -8,7 +8,7 @@ void data_processing()
     long int seconds = input_data();
     if (seconds == 0)
     {
-        puts("0 seconds is zero");
+        puts("0 seconds it is zero");
         return;
     }
     else if (seconds == 1)
