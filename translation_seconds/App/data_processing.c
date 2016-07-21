@@ -3,7 +3,7 @@
 
 void data_processing()
 {
-    struct Count data;
+    struct Time_in_dhms data;
 
     long int seconds = input_data();
     data = convert_seconds(seconds); // convert seconds to days.hours.minutes.seconds
@@ -15,7 +15,7 @@ void data_processing()
     {
         printf("%ld seconds is ", seconds);
     }
-    if ((data.days == 0) && (data.hours == 0) && (data.minutes == 0))
+    if ((data.days == 0) && (data.hours == 0) && (data.minutes == 0) && (data.seconds == 0))
     {
         puts("0 seconds");
         return;

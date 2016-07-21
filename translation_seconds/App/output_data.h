@@ -3,6 +3,6 @@
 
 #include "struct_count.h"
 
-void output_data(struct Count output);
+void output_data(struct Time_in_dhms output);
 
 #endif // OUTPUT_DATA_H

@@ -1,9 +1,9 @@
 #include "output_data.h"
 #include "data_processing.h"
 
-void output_data(struct Count output)
+void output_data(struct Time_in_dhms output)
 {
-    struct Count data;
+    struct Time_in_dhms data;
     data = output;
     //printf("%ld %ld %ld %ld", data.days, data.hours, data.minutes, data.seconds);
     if (data.days != 0)
