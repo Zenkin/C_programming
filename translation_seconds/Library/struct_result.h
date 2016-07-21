@@ -7,8 +7,8 @@ extern "C" {
 
 struct Result // the result of which returns pick_out_* functions( * - d/h/m/s)
 {
-    long int count; // the count of d/h/m/s in all seconds( which served in function)
-    long int lost_seconds; // "all seconds( which served in function) - count * d/h/m/s"
+    long count; // the count of d/h/m/s in all seconds( which served in function)
+    long lost_seconds; // "all seconds( which served in function) - count * d/h/m/s"
 };
 
 #ifdef __cplusplus

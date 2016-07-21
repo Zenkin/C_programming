@@ -7,10 +7,10 @@ extern "C" {
 
 struct Count // count of days, hours, minutes and seconds
 {
-    long int days; // from 0 to 365 (ignore leap year)
-    long int hours; // from 0 to 24
-    long int minutes; // from 0 to 60
-    long int seconds; // from 0 to 60
+    long days; // from 0 to 365 (ignore leap year)
+    long hours; // from 0 to 24
+    long minutes; // from 0 to 60
+    long seconds; // from 0 to 60
 };
 
 #ifdef __cplusplus

@@ -5,7 +5,7 @@
 #define hour 3600 // seconds in hour
 #define day 86400 // seconds in day
 
-struct Count convert_seconds(long int seconds)
+struct Count convert_seconds(long seconds)
 {
     struct Result result1;
     struct Count count_of;
