@@ -1,24 +1,26 @@
 #include "input_data.h"
 
+const long int max_input_seconds = 31536000;
+
 long int input_data()
 {
-    long int seconds, max_seconds = 31540000;
-    bool error = true;
+    long int input_seconds;
+    bool invalid_values = true;
 
-    puts("Enter seconds(not more 31'540'000):");
+    puts("Enter seconds(not more 31'536'000):");
     printf("Input seconds: ");
-    while (error)
+    while (invalid_values)
     {
         scanf("%ld", &seconds);
-        if ((seconds > max_seconds) || (seconds < 0))
+        if ((input_seconds > max_input_seconds) || (input_seconds < 0))
         {
             print_error();
-            error = true;
+            invalid_values = true;
         }
         else
         {
-            error = false;
+            invalid_values = false;
         }
     }
-    return seconds;
+    return input_seconds;
 }

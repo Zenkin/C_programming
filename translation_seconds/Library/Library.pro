@@ -14,12 +14,11 @@ CONFIG += staticlib
 
 SOURCES += \
     pick_out_dhms.c \
-    convert_seconds.c
+    conver_seconds.c
 
 HEADERS += \
     convert_seconds.h \
     pick_out_dhms.h \
-    struct_result.h \
     struct_count.h
 unix {
     target.path = /usr/lib

@@ -7,9 +7,9 @@ extern "C" {
 
 #include "struct_result.h"
 
-struct Result pick_out_days(long seconds); // return count days in all seconds which served in the function
-struct Result pick_out_hours(long seconds); // return count hours in all seconds which served in the function
-struct Result pick_out_minutes(long seconds); // return count minutes in all seconds which served in the function
+int pick_out_days(long seconds);
+int pick_out_hours(long seconds);
+int pick_out_minutes(long seconds);
 
 #ifdef __cplusplus
 }

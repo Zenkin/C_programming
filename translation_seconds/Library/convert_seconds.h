@@ -8,7 +8,7 @@ extern "C" {
 #include "struct_count.h"
 #include "pick_out_dhms.h"
 
-struct Time_in_dhms convert_seconds(long seconds); // convert seconds in days.hours.minutes.seconds
+struct Time_in_days_hours_minutes_seconds convert_seconds(long seconds);
 
 #ifdef __cplusplus
 }

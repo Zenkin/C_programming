@@ -3,25 +3,22 @@
 
 void data_processing()
 {
-    struct Time_in_dhms data;
+    struct Time_in_days_hours_minutes_seconds data;
 
     long int seconds = input_data();
-    data = convert_seconds(seconds); // convert seconds to days.hours.minutes.seconds
-    if (seconds == 1)
+    if (seconds == 0)
     {
-        printf("%ld second is ", seconds);
-    }
-    else
-    {
-        printf("%ld seconds is ", seconds);
-    }
-    if ((data.days == 0) && (data.hours == 0) && (data.minutes == 0) && (data.seconds == 0))
-    {
-        puts("0 seconds");
+        puts("0 seconds is zero");
         return;
     }
+    else if (seconds == 1)
+    {
+        puts("1 second is one second");
+    }
     else
     {
+        data = convert_seconds(seconds);
+        printf("%ld seconds is ", seconds);
         output_data(data);
     }
 }

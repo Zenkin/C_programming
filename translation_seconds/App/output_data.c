@@ -1,11 +1,10 @@
 #include "output_data.h"
 #include "data_processing.h"
 
-void output_data(struct Time_in_dhms output)
+void output_data(struct Time_in_days_hours_minutes_seconds output)
 {
-    struct Time_in_dhms data;
+    struct Time_in_days_hours_minutes_seconds data;
     data = output;
-    //printf("%ld %ld %ld %ld", data.days, data.hours, data.minutes, data.seconds);
     if (data.days != 0)
     {
         printf("%ld ", data.days);

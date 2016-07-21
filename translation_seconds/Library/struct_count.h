@@ -1,11 +1,11 @@
-#ifndef STRUCT_TIME_IN_DHMS_H
-#define STRUCT_TIME_IN_DHMS_H
+#ifndef STRUCT_COUNT_H
+#define STRUCT_COUNT_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-struct Time_in_dhms
+struct Time_in_days_hours_minutes_seconds
 {
     long days; // from 0 to 365 (ignore leap year)
     long hours; // from 0 to 24
@@ -17,4 +17,4 @@ struct Time_in_dhms
 }
 #endif
 
-#endif // STRUCT_TIME_IN_DHMS_H
+#endif // STRUCT_COUNT_H
