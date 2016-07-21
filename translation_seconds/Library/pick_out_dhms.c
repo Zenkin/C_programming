@@ -47,9 +47,9 @@ struct Result pick_out_days(long int seconds)
 
 //Это касается всех этих аналогичных функций. Потому что при текущем раскладе эти функции дублируют друг друга на 100 % почти. 
 //Получится в итоге так:
-pick_out_days(seconds);//исходный seconds
-pick_out_hours(seconds);//здесь уже новый seconds, который был изменен. он равен по твоему seconds - lost_seconds.
-pick_out_minutes(seconds);//здесь новый
+//pick_out_days(seconds);//исходный seconds
+//pick_out_hours(seconds);//здесь уже новый seconds, который был изменен. он равен по твоему seconds - lost_seconds.
+//pick_out_minutes(seconds);//здесь новый
 
 
 
