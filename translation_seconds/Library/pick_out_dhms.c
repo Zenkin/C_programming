@@ -1,4 +1,6 @@
 #include "pick_out_dhms.h"
+
+//этот хэдер убрать в pick_out_dhms.h
 #include <stdio.h>
 
 //я видел, что ты эти константы объявляешь еще в другом месте.
