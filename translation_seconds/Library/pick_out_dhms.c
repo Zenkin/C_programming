@@ -1,12 +1,18 @@
 #include "pick_out_dhms.h"
+
+//этот хэдер убрать в pick_out_dhms.h
 #include <stdio.h>
 
+//я видел, что ты эти константы объявляешь еще в другом месте.
+//значит их надо вынести в header file. и этот header подключать
 const int seconds_in_day = 86400;
 const int seconds_in_hour = 3600;
 const int seconds_in_minutes = 60;
 
+//странное форматирование.
 int pick_out_days(long seconds)
-    {      
+    {     
+        //если seconds == 0, то seconds / seconds_in_day == 0 тоже
         if (seconds == 0)
         {
             return 0;
@@ -19,6 +25,7 @@ int pick_out_days(long seconds)
 
 int pick_out_hours(long seconds)
     {
+        //аналогично
         if (seconds == 0)
         {
             return 0;
@@ -31,6 +38,7 @@ int pick_out_hours(long seconds)
 
 int pick_out_minutes(long seconds)
     {
+        //аналогично
         if (seconds == 0)
         {
             return 0;
