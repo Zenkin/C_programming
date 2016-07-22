@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#include "struct_count.h"
+#include "time_in_days_hours_minutes_seconds.h"
 #include "pick_out_dhms.h"
 
 struct Time_in_days_hours_minutes_seconds convert_seconds(long seconds);

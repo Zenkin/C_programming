@@ -1,5 +1,5 @@
-#ifndef STRUCT_COUNT_H
-#define STRUCT_COUNT_H
+#ifndef TIME_IN_DAYS_HOURS_MINUTES_SECONDS_H
+#define TIME_IN_DAYS_HOURS_MINUTES_SECONDS_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -17,4 +17,4 @@ struct Time_in_days_hours_minutes_seconds
 }
 #endif
 
-#endif // STRUCT_COUNT_H
+#endif // TIME_IN_DAYS_HOURS_MINUTES_SECONDS_H

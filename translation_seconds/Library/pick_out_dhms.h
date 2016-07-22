@@ -5,8 +5,6 @@
 extern "C" {
 #endif
 
-#include "struct_result.h"
-
 int pick_out_days(long seconds);
 int pick_out_hours(long seconds);
 int pick_out_minutes(long seconds);

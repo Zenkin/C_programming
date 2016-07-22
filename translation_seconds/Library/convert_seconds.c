@@ -1,5 +1,5 @@
 #include "convert_seconds.h"
-#include "struct_count.h"
+#include "time_in_days_hours_minutes_seconds.h"
 #include <stdio.h>
 
 const long seconds_in_one_min = 60;

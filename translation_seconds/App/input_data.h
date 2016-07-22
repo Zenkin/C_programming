@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "print_error.h"
-#include "struct_count.h"
+#include "time_in_days_hours_minutes_seconds.h"
 #include "convert_seconds.h"
 #include "output_data.h"
 
