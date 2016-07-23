@@ -1,7 +1,7 @@
 #include "data_processing.h"
 
 //убрать в хэдер data_processing
-#include "input_data.h"
+#include "input_seconds.h"
 
 //функцию лучше называть глаголом
 //даже если не обращать на это внимание, то по смыслу не очень хорошее название.
@@ -10,7 +10,7 @@ void data_processing()
 {
     struct Time_in_days_hours_minutes_seconds data; //подумай над названием для переменной
 
-    long int seconds = input_data();
+    long int seconds = input_seconds();
     
     //зачем нужны эти проверки? 0, 1 ?
     if (seconds == 0)

@@ -4,16 +4,16 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.c \
-    input_data.c \
     print_error.c \
     data_processing.c \
-    output_data.c
+    output_data.c \
+    input_seconds.c
 
 HEADERS += \
-    input_data.h \
     print_error.h \
     data_processing.h \
-    output_data.h
+    output_data.h \
+    input_seconds.h
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Library/release/ -lLibrary
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Library/debug/ -lLibrary

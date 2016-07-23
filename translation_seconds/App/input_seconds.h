@@ -1,5 +1,5 @@
-#ifndef INPUT_DATA_H
-#define INPUT_DATA_H
+#ifndef INPUT_SECONDS_H
+#define INPUT_SECONDS_H
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -8,6 +8,6 @@
 #include "convert_seconds.h"
 #include "output_data.h"
 
-long int input_data();
+long int input_seconds();
 
-#endif // INPUT_DATA_H
+#endif // INPUT_SECONDS_H
