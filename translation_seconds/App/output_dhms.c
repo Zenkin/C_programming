@@ -1,6 +1,6 @@
 #include "output_dhms.h"
 
-void output_data(struct Time_in_days_hours_minutes_seconds output)
+void output_dhms(struct Time_units output)
 {
     if (output.days != 0)
     {

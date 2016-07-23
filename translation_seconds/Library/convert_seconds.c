@@ -1,7 +1,7 @@
 //мне кажется более понятно, когда все хэдеры подключаются в одном месте.
 //здесь оставить только convert_seconds.h. А остальные в нём подключить.
 #include "convert_seconds.h"
-#include "time_in_days_hours_minutes_seconds.h"
+#include "time_units.h"
 #include <stdio.h>
 
 // поместить в header. например, в pick_out_dhms.h
@@ -10,9 +10,9 @@ const long seconds_in_one_min = 60;
 const long seconds_in_one_hour = 3600;
 const long seconds_in_one_day = 86400;
 
-struct Time_in_days_hours_minutes_seconds convert_seconds(long seconds)
+struct Time_units convert_seconds(long seconds)
 {
-    struct Time_in_days_hours_minutes_seconds time_in_dhms;
+    struct Time_units time_in_dhms;
 
     int days = pick_out_days(seconds);
     time_in_dhms.days = days;

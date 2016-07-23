@@ -3,7 +3,7 @@
 // data_processing переводится как обработка данных
 void data_processing()
 {
-    struct Time_in_days_hours_minutes_seconds data;
+    struct Time_units data;
 
     long int seconds = input_seconds();
     
@@ -20,6 +20,6 @@ void data_processing()
     {
         data = convert_seconds(seconds);
         printf("%ld seconds is ", seconds);
-        output_data(data);
+        output_dhms(data);
     }
 }

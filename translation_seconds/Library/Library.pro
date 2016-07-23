@@ -19,7 +19,7 @@ SOURCES += \
 HEADERS += \
     convert_seconds.h \
     pick_out_dhms.h \
-    time_in_days_hours_minutes_seconds.h
+    time_units.h
 unix {
     target.path = /usr/lib
     INSTALLS += target

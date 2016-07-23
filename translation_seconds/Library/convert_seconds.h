@@ -5,10 +5,10 @@
 extern "C" {
 #endif
 
-#include "time_in_days_hours_minutes_seconds.h"
+#include "time_units.h"
 #include "pick_out_dhms.h"
 
-struct Time_in_days_hours_minutes_seconds convert_seconds(long seconds);
+struct Time_units convert_seconds(long seconds);
 
 #ifdef __cplusplus
 }
