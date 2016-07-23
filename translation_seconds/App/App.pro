@@ -6,14 +6,14 @@ CONFIG -= qt
 SOURCES += main.c \
     print_error.c \
     data_processing.c \
-    output_data.c \
-    input_seconds.c
+    input_seconds.c \
+    output_dhms.c
 
 HEADERS += \
     print_error.h \
     data_processing.h \
-    output_data.h \
-    input_seconds.h
+    input_seconds.h \
+    output_dhms.h
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../Library/release/ -lLibrary
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../Library/debug/ -lLibrary

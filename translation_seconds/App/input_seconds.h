@@ -6,7 +6,7 @@
 #include "print_error.h"
 #include "time_in_days_hours_minutes_seconds.h"
 #include "convert_seconds.h"
-#include "output_data.h"
+#include "output_dhms.h"
 
 long int input_seconds();
 
