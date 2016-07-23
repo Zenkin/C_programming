@@ -5,9 +5,11 @@
 extern "C" {
 #endif
 
-int pick_out_days(long seconds);
-int pick_out_hours(long seconds);
-int pick_out_minutes(long seconds);
+#include <stdio.h>
+
+long pick_out_days(long *seconds);
+long pick_out_hours(long *seconds);
+long pick_out_minutes(long *seconds);
 
 #ifdef __cplusplus
 }

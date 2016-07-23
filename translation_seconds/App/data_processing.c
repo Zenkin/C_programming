@@ -20,6 +20,6 @@ void data_processing()
     {
         data = convert_seconds(seconds);
         printf("%ld seconds is ", seconds);
-        output_dhms(data);
+        output_dhms(&data);
     }
 }

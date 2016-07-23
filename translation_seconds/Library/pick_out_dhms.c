@@ -1,58 +1,26 @@
 #include "pick_out_dhms.h"
 
-//этот хэдер убрать в pick_out_dhms.h
-#include <stdio.h>
+const long seconds_in_one_min = 60;
+const long seconds_in_one_hour = 3600;
+const long seconds_in_one_day = 86400;
 
-//я видел, что ты эти константы объявляешь еще в другом месте.
-//значит их надо вынести в header file. и этот header подключать
-const int seconds_in_day = 86400;
-const int seconds_in_hour = 3600;
-const int seconds_in_minutes = 60;
+long pick_out_days(long *seconds)
+{
+    int days = *seconds / seconds_in_one_day;
+    *seconds -= days * seconds_in_one_day;
+    return days;
+}
 
-//странное форматирование.
-int pick_out_days(long seconds)
-    {     
-        //если seconds == 0, то seconds / seconds_in_day == 0 тоже
-        if (seconds == 0)
-        {
-            return 0;
-        }
-        else
-        {
-            return seconds / seconds_in_day;
-        }
-    }
+long pick_out_hours(long *seconds)
+{
+    int hours = *seconds / seconds_in_one_hour;
+    *seconds -= hours * seconds_in_one_hour;
+    return hours;
+}
 
-int pick_out_hours(long seconds)
-    {
-        //аналогично
-        if (seconds == 0)
-        {
-            return 0;
-        }
-        else
-        {
-            return seconds / seconds_in_hour;
-        }
-    }
-
-int pick_out_minutes(long seconds)
-    {
-        //аналогично
-        if (seconds == 0)
-        {
-            return 0;
-        }
-        else
-        {
-            int minutes = seconds / seconds_in_minutes;
-            if (minutes == 0)
-            {
-                return 0;
-            }
-            else
-            {
-                return minutes;
-            }
-        }
-    }
+long pick_out_minutes(long *seconds)
+{
+    int minutes = *seconds / seconds_in_one_min;
+    *seconds -= minutes * seconds_in_one_min;
+    return minutes;
+}

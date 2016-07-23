@@ -1,11 +1,11 @@
 #include "output_dhms.h"
 
-void output_dhms(struct Time_units output)
+void output_dhms(struct Time_units *output)
 {
-    if (output.days != 0)
+    if (output->days != 0)
     {
-        printf("%ld ", output.days);
-        if (output.days > 1)
+        printf("%ld ", output->days);
+        if (output->days > 1)
         {
             printf("days ");
         }
@@ -14,10 +14,10 @@ void output_dhms(struct Time_units output)
             printf("day ");
         }
     }
-    if (output.hours != 0)
+    if (output->hours != 0)
     {
-        printf("%ld ", output.hours);
-        if (output.hours > 1)
+        printf("%ld ", output->hours);
+        if (output->hours > 1)
         {
             printf("hours ");
         }
@@ -26,10 +26,10 @@ void output_dhms(struct Time_units output)
             printf("hour ");
         }
     }
-    if (output.minutes != 0)
+    if (output->minutes != 0)
     {
-        printf("%ld ", output.minutes);
-        if (output.minutes > 1)
+        printf("%ld ", output->minutes);
+        if (output->minutes > 1)
         {
             printf("minutes ");
         }
@@ -38,10 +38,10 @@ void output_dhms(struct Time_units output)
             printf("minute ");
         }
     }
-    if (output.seconds > 0)
+    if (output->seconds > 0)
     {
-        printf("%ld ", output.seconds);
-        if ((output.seconds > 1)||(output.seconds < 1))
+        printf("%ld ", output->seconds);
+        if ((output->seconds > 1)||(output->seconds < 1))
         {
             printf("seconds ");
         }

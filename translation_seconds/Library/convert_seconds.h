@@ -5,6 +5,7 @@
 extern "C" {
 #endif
 
+#include <stdio.h>
 #include "time_units.h"
 #include "pick_out_dhms.h"
 
